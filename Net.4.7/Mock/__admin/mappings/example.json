@@ -1,0 +1,27 @@
+{
+  "Request": {
+    "Path": {
+      "Matchers": [
+        {
+          "Name": "WildcardMatcher",
+          "Pattern": "/api/products"
+        }
+      ]
+    },
+    "Methods": [ "get" ]
+  },
+  "Response": {
+    "Status": 200,
+    "BodyAsJson": [
+      {
+        "id": 1,
+        "description": "Book A"
+      },
+      {
+        "id": 2,
+        "description": "Book B"
+      }
+    ],
+    "Headers": { "Content-Type": "application/json" }
+  }
+}
